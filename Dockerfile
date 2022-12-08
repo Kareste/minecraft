@@ -66,7 +66,7 @@ COPY mcstatus /usr/local/bin
 
 VOLUME ["/data"]
 COPY server.properties /tmp/server.properties
-COPY log4j2.xml /tmp/log4j2.xml
+COPY log4j2.xml /data/log4j2.xml
 WORKDIR /data
 
 ENV UID=1000 GID=1000 \

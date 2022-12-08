@@ -36,7 +36,7 @@ if [ ! -e "$LOGFILE" ]; then
 else
   log "log4j2.xml already created, skipping"
 fi
-JVM_OPTS="-Dlog4j.configurationFile=/data/log4j2.xml ${JVM_OPTS}"
+JVM_OPTS="-Dlog4j2.configurationFile=/data/log4j2.xml ${JVM_OPTS}"
 fi
 
 # Make sure files exist and are valid JSON (for pre-1.12 to 1.12 upgrades)
